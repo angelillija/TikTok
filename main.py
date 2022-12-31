@@ -7,7 +7,7 @@ class Account:
         self.total      = 0
 
 
-        self.proxies = open("./data/proxies.txt", "r").read().splitlines()
+        self.proxies = open("./proxies.txt", "r").read().splitlines()
 
         self.session = requests.Session()
         self.proxy   = "http://" + random.choice(self.proxies)
@@ -161,7 +161,7 @@ class Account:
 
             session_id = response.json()["data"]["session_key"]
             
-            open("./output/accounts.txt", "a").write(f"{self.device[0]}:{self.device[1]}:{email}:{password}:{self.session_id}\n")
+            open("./accounts.txt", "a").write(f"{self.device[0]}:{self.device[1]}:{email}:{password}:{self.session_id}\n")
             print(f"[ {self.registered} ] Registered Account | [Email: {email} Password: {password} Session ID: {session_id}]")
         else:
             print(response.json())
