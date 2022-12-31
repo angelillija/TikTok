@@ -19,9 +19,6 @@ This is a TikTok account generator in which it allows you to mass create TikTok 
 ### `🪲` Known bugs
 - "Too many attempts" error after about 20 accounts registered (possible solution: fix up the device generator)
 
-### `📄` License
-- 
-
 ## `🧑‍💻` Contact
 - **Website**: https://aithe.dev/
 - **Discord**: ai#4026
