@@ -18,7 +18,7 @@
 
 ### `⚙️` Setup
 - Enter your http/s proxies in `proxies.txt`
-- Run the following command in CMD: `pip install requests pycrypto`
+- Run the following command in CMD: `pip install requests pycrypto ptyz`
 - CD into the dir of the project and run `python3 main.py`
 
 ### `📝` To-Do
