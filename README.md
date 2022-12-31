@@ -12,12 +12,12 @@
 
 ### `⭐` Features
 - Multi-threading
-- Proxy support
+- HTTP/S Proxy support 
 - Auto email verification using temp mail
 - Saves accounts to `accounts.txt` (Format - device_id:install_id:mail:password:session_id)
 
 ### `⚙️` Setup
-- Enter your proxies in `proxies.txt`
+- Enter your http/s proxies in `proxies.txt`
 - Run the following command in CMD: `pip install requests pycrypto`
 - CD into the dir of the project and run `python3 main.py`
 
