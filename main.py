@@ -1,3 +1,6 @@
+# Developed by www.aithe.dev
+# This project is under GNU GENERAL PUBLIC LICENSE
+
 from utils.api import *
 
 class Account:
