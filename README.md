@@ -1,7 +1,7 @@
 <h2 align="center">🎯 TikTok Account Generator</h2>
   <p align="center">This is a TikTok account generator in which it allows you to mass create TikTok accounts automatically. This generator uses TikTok's private mobile API and is fully requests based. This may be used for a variety of purposes, including marketing or promotional purposes. It is important to note that using an account generator may violate TikTok's terms of service and could result in the suspension or deletion of the generated accounts.
     <br />
-    This code is very rough.
+    This code is very rough and was in a testing faze.
     <br />
     <a href="https://github.com/aithedev/TikTok-Account-Generator/issues">Report Bug</a>
     ·
