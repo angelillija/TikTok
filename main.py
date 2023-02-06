@@ -6,14 +6,11 @@ class Account:
         self.errors     = 0
         self.total      = 0
 
-
         self.proxies = open("./proxies.txt", "r").read().splitlines()
 
         self.session = requests.Session()
         self.proxy   = "http://" + random.choice(self.proxies)
         self.session.proxies.update({"http": self.proxy, "https": self.proxy})
-
-        print("Fully made by ai | https://aithe.dev\n")
 
         self.accounts_to_register = int(input("Number of accounts to register: "))
         self.threads              = int(input("Threads: "))
@@ -161,8 +158,8 @@ class Account:
 
             session_id = response.json()["data"]["session_key"]
             
-            open("./accounts.txt", "a").write(f"{self.device[0]}:{self.device[1]}:{email}:{password}:{self.session_id}\n")
-            print(f"[ {self.registered} ] Registered Account | [Email: {email} Password: {password} Session ID: {session_id}]")
+            open("./output/accounts.txt", "a").write(f"{self.device[0]}:{self.device[1]}:{email}:{password}:{session_id}\n")
+            print(f"[ {self.registered} ] Registered Account | [Device ID: {self.device[0]} Install ID:{self.device[1]} Email: {email} Password: {password} Session ID: {session_id}]")
         else:
             print(response.json())
 
@@ -181,7 +178,6 @@ class Account:
 
             code = messages[0]["Subject"][:6]
             self.verify_code(code, email, password)        
-            self.edit_profile()
 
     def start(self) -> None:
         for _ in range(self.threads):
