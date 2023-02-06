@@ -14,7 +14,7 @@
 ### `⭐` Features
 - Multi-threading
 - HTTP/S Proxy support 
-- Auto email verification using temp mail
+- Auto email verification using temp mail (lasagna.pro)
 - Saves accounts to `accounts.txt` (Format - device_id:install_id:mail:password:session_id)
 
 ### `⚙️` Setup
