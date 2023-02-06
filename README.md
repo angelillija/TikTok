@@ -26,7 +26,7 @@
 - Make UI look nicer
 
 ### `🪲` Known bugs
-- "Too many attempts" error after about 20 accounts registered (possible solution: fix up the device generator)
+- "Too many attempts" error after about 20 accounts registered (**possible solution**: fix up the device generator)
 
 ## `🧑‍💻` Contact
 - **Website**: https://aithe.dev/
