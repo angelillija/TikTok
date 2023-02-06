@@ -15,7 +15,7 @@
 - Multi-threading
 - HTTP/S Proxy support 
 - Auto email verification using temp mail (lasagna.pro)
-- Saves accounts to `accounts.txt` (Format - device_id:install_id:mail:password:session_id)
+- Saves accounts to `accounts.txt` (**Format** - device_id:install_id:mail:password:session_id)
 
 ### `⚙️` Setup
 - Enter your http/s proxies in `proxies.txt`
@@ -23,7 +23,7 @@
 - CD into the dir of the project and run `python3 main.py`
 
 ### `📝` To-Do
-- Auto set avatar, nickname, username, & signature
+- Auto set avatar, nickname, username, & bio
 - Make UI look nicer
 
 ### `🪲` Known bugs
