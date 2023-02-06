@@ -626,4 +626,3 @@ class Xlog:
                 "https": proxy
             }
         )
-
