@@ -1,7 +1,7 @@
 <h2 align="center">🎯 TikTok Account Generator</h2>
-  <p align="center">This is a TikTok account generator in which it allows you to mass create TikTok accounts automatically. This generator uses TikTok's private mobile API and is fully requests based. This may be used for a variety of purposes, including marketing or botting purposes. It is important to note that using an account generator may violate TikTok's terms of service and could result in the suspension or deletion of the generated accounts.
+  <p align="center">This is a TikTok account generator in which it allows you to mass create TikTok accounts automatically. This generator uses TikTok's private mobile API and is fully requests based. This may be used for a variety of purposes, including marketing or botting purposes. 
     <br />
-    This code is very rough and is in a testing faze.
+    This code is very rough and is in a testing faze. I probably won't continue working on this.
     <br />
     <br />
     <a href="https://github.com/aithedev/TikTok-Account-Generator/issues">Report Bug</a>
@@ -28,7 +28,7 @@
 
 ### `🪲` Known bugs
 - "Too many attempts" error after some accounts registered (**99% sure this is the solution**: fix up the device generator)
-- Outputs the same session id and sometimes same did's & iid's
+- Sometimes outputs the same session id as well as the same did's & iid's 
 
 ### `📺` Demo
 https://user-images.githubusercontent.com/105955582/216878344-c67cc4c8-a313-409a-91f7-5678f5e82eb5.mp4
