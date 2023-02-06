@@ -26,10 +26,12 @@
 - Make UI look nicer
 
 ### `🪲` Known bugs
-- "Too many attempts" error after some accounts registered (**possible solution**: fix up the device generator)
+- "Too many attempts" error after some accounts registered (**99% sure this is the solution**: fix up the device generator)
 - Outputs the same session id and sometimes same did's & iid's
 
 ### `📺` Demo
+https://user-images.githubusercontent.com/105955582/216878344-c67cc4c8-a313-409a-91f7-5678f5e82eb5.mp4
+
 
 ## `🧑‍💻` Contact
 - **Website**: https://aithe.dev/
