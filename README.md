@@ -27,7 +27,7 @@
 - Make UI look nicer
 
 ### `🪲` Known bugs
-- "Too many attempts" error after some accounts registered (**99% sure this is the solution**: fix up the device generator)
+- "Too many attempts" error after some accounts registered (**solution**: fix up the device generator)
 - Sometimes outputs the same session id as well as the same did's & iid's 
 
 ### `📺` Demo
