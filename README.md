@@ -25,7 +25,6 @@
 
 ### `📝` To-Do
 - Auto set avatar, nickname, username, & bio
-- Make UI look nicer
 
 ### `🪲` Known bugs
 - "Too many attempts" error after some accounts registered (**solution**: fix up the device generator)
