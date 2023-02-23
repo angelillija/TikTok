@@ -14,20 +14,6 @@ import threading
 import urllib.parse
 from utils.xgorgon import Xgorgon
 from utils.ttencrypt import TTEncrypt
-from utils.eazyui import *
-
-class Output:
-    def error(txt: str) -> None:
-        Console.printError(txt, PrintType.CLEAN)
-
-    def debug(txt: str) -> None:
-        Console.printInfo(txt, PrintType.CLEAN)
-
-    def good(txt: str) -> None:
-        Console.printSuccess(txt, PrintType.CLEAN)
-
-    def other(txt: str) -> None:
-        Console.printOther(txt, PrintType.CLEAN)
 
 application = {
     "aid"                   : 1233,
@@ -337,8 +323,8 @@ class Device:
     @staticmethod
     def setup_timezone(country_code: str) -> dict:
         timezone_name = random.choice(pytz.country_timezones[country_code])
-        timezone      = round(int(datetime.now(pytz.timezone(timezone_name)).utcoffset().seconds/ 3600))
-        offset        = round(datetime.now(pytz.timezone(timezone_name)).utcoffset().total_seconds())
+        timezone      = round(int(datetime.datetime.now(pytz.timezone(timezone_name)).utcoffset().seconds/ 3600))
+        offset        = round(datetime.datetime.now(pytz.timezone(timezone_name)).utcoffset().total_seconds())
         return {
             "timezone_name" : timezone_name,
             "timezone"      : timezone,
@@ -586,28 +572,21 @@ class Applog:
     def register_device(self, proxy):
         params = self.params()
 
-        try:
-            r = requests.post(
-                url     = f"https://{self.host}/service/2/device_register/?",
-                params  = params,
-                headers = self.headers(params),
-                data    = bytes.fromhex(self.tt_encryption(self.payload())),
-                proxies = {
-                    "http"  : proxy,
-                    "https" : proxy
-                }
-            )
-            
-            if r.json()["device_id"] == 0 or r.json()["device_id"] == "0":
-                self.register_device(proxy)
-            return r.json()["device_id"], r.json()["install_id"]
-        except requests.exceptions.ProxyError:
-            Output.error("Invalid Proxy, retrying")
-            return self.register_device(proxy)
-        except requests.exceptions.SSLError:
-            Output.error("Invalid Proxy, retrying")
-            return self.register_device(proxy)
+        r = requests.post(
+            url     = f"https://{self.host}/service/2/device_register/?",
+            params  = params,
+            headers = self.headers(params),
+            data    = bytes.fromhex(self.tt_encryption(self.payload())),
+            proxies = {
+                "http"  : proxy,
+                "https" : proxy
+            }
+        )
+        
+        if r.json()["device_id"] == 0 or r.json()["device_id"] == "0":
+            self.register_device(proxy)
 
+        return r.json()["device_id"], r.json()["install_id"]
 
 
 class Xlog:
@@ -628,29 +607,22 @@ class Xlog:
         )
         sig = Xgorgon().calculate(params, None, None)
 
-        try:
-            requests.get(
-                url = "https://xlog-va.tiktokv.com/v2/s/?", 
-                params = params,
-                headers = {
-                    "accept-encoding": "gzip",
-                    "cookie": "sessionid=",
-                    "x-ss-req-ticket": str("".join(str(time.time()).split(".")))[:13],
-                    "x-tt-dm-status": "login=0;ct=0",
-                    "X-Gorgon": sig["X-Gorgon"],
-                    "X-Khronos": str(sig["X-Khronos"]),
-                    "host": "xlog-va.tiktokv.com",
-                    "connection": "Keep-Alive",
-                    "user-agent": "okhttp/3.10.0.1",
-                },
-                proxies = {
-                    "http": proxy,
-                    "https": proxy
-                }
-            )
-        except requests.exceptions.ProxyError:
-            Output.error("Invalid Proxy, retrying")
-            self.bypass(proxy)
-        except requests.exceptions.SSLError:
-            Output.error("Invalid Proxy, retrying")
-            self.bypass(proxy)
+        requests.get(
+            url = "https://xlog-va.tiktokv.com/v2/s/?", 
+            params = params,
+            headers = {
+                "accept-encoding": "gzip",
+                "cookie": "sessionid=",
+                "x-ss-req-ticket": str("".join(str(time.time()).split(".")))[:13],
+                "x-tt-dm-status": "login=0;ct=0",
+                "X-Gorgon": sig["X-Gorgon"],
+                "X-Khronos": str(sig["X-Khronos"]),
+                "host": "xlog-va.tiktokv.com",
+                "connection": "Keep-Alive",
+                "user-agent": "okhttp/3.10.0.1",
+            },
+            proxies = {
+                "http": proxy,
+                "https": proxy
+            }
+        )
