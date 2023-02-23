@@ -653,4 +653,4 @@ class Xlog:
             self.bypass(proxy)
         except requests.exceptions.SSLError:
             Output.error("Invalid Proxy, retrying")
-            return self.bypass(proxy)
+            self.bypass(proxy)
