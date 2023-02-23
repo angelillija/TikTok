@@ -18,7 +18,7 @@
 - Saves accounts to `./output/accounts.txt` (**Format** - device_id:install_id:mail:password:session_id)
 
 ### `⚙️` Setup
-- Star this project 
+- Star this project or else it wont work
 - Enter your http/s proxies in `proxies.txt`
 - Run the following command in CMD: `pip install requests pycrypto ptyz`
 - CD into the dir of the project and run `python3 main.py`
