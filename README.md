@@ -20,7 +20,7 @@
 ### `⚙️` Setup
 - Star this project or else it wont work
 - Enter your http/s proxies in `proxies.txt`
-- Run the following command in CMD: `pip install requests pycrypto ptyz`
+- Run the following command in CMD: `pip install requests pycrypto ptyz Terminalia`
 - CD into the dir of the project and run `python3 main.py`
 
 ### `📝` To-Do
