@@ -37,5 +37,5 @@ https://user-images.githubusercontent.com/105955582/216878344-c67cc4c8-a313-409a
 
 ## `🧑‍💻` Contact
 - **Website**: https://aithe.dev/
-- **Discord**: ai#4444
 - **Telegram**: t.me/aithedev
+- **Discord**: ai#4444
