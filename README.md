@@ -33,8 +33,3 @@
 
 ### `📺` Demo
 https://user-images.githubusercontent.com/105955582/216878344-c67cc4c8-a313-409a-91f7-5678f5e82eb5.mp4
-
-
-## `🧑‍💻` Contact
-- **Telegram**: t.me/aithedev
-- **Discord**: ai#4444 (1078432806646054922)
