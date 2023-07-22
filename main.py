@@ -1,4 +1,4 @@
-# Developed by www.aithe.dev
+# Made by Angel Illija
 # This project is under GNU GENERAL PUBLIC LICENSE
 
 from utils.api import *
