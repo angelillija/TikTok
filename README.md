@@ -31,5 +31,6 @@
 - "Too many attempts" error after some accounts registered (**solution**: fix up the device generator)
 - Sometimes outputs the same session id as well as the same did's & iid's 
 
-### `📺` Demo
-https://user-images.githubusercontent.com/105955582/216878344-c67cc4c8-a313-409a-91f7-5678f5e82eb5.mp4
+### `👨‍💻` Contact
+- **Telegram**: @angelillija
+- **Discord**: @angel.illija
