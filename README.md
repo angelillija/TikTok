@@ -1,5 +1,3 @@
-# New TikTok generator for sale contact t.me/angelillija
-
 <h2 align="center">🎯 TikTok Account Generator</h2>
   <p align="center">This is a TikTok account generator in which it allows you to mass create TikTok accounts automatically. This generator uses TikTok's private mobile API and is fully requests based. This may be used for a variety of purposes, including marketing or botting purposes. 
     <br />
