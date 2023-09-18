@@ -34,5 +34,4 @@
 - Sometimes outputs the same session id as well as the same did's & iid's 
 
 ### `👨‍💻` Contact
-- **Telegram**: [@angell](htttps://t.me/angell)
-- **Discord**: @angel.illija
+- **Telegram**: [@angell](https://t.me/angell)
