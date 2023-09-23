@@ -1,4 +1,4 @@
-# Selling New Updated Working One, Contact t.me/angell
+# [Selling New Updated Working One, Contact t.me/angell](https://t.me/angell)
 
 <h2 align="center">🎯 TikTok Account Generator</h2>
   <p align="center">This is a TikTok account generator in which it allows you to mass create TikTok accounts automatically. This generator uses TikTok's private mobile API and is fully requests based. This may be used for a variety of purposes, including marketing or botting purposes. 
@@ -34,4 +34,4 @@
 - Sometimes outputs the same session id as well as the same did's & iid's 
 
 ### `👨‍💻` Contact
-- **Telegram**: [@angell](https://t.me/angell)
+- **Telegram**: [t.me/angell](https://t.me/angell)
