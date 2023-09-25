@@ -26,6 +26,7 @@
 - CD into the dir of the project and run `python3 main.py`
 
 ### `📝` To-Do
+
 - Auto set avatar, nickname, username, & bio
 - Make UI look nicer
 
