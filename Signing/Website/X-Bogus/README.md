@@ -80,9 +80,6 @@ The `scramble` function takes various parameters and arranges them in a specific
             g, q, h, r, i, s,
             j,
         ]])
-        
-    def checksum(salt_list: str) -> int:
-        checksum = 64; _ = [checksum := checksum ^ x for x in salt_list[3:]]
 ```
 
 ### Checksum Calculation
