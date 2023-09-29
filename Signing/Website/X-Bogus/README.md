@@ -5,7 +5,7 @@ In essence, the X-Bogus parameter acts as a validation token, allowing TikTok to
 
 ### Hashing with MD5
    
-The MD5 hash function is used to process input data. The md5_2x function applies a double MD5 hash to enhance data security.
+The `md5_2x` function applies a double MD5 hash. This is used to double hash the params & data.
 ```py
 def md5_2x(string):
     return md5(md5(string.encode()).digest()).hexdigest()
@@ -13,7 +13,7 @@ def md5_2x(string):
 
 ### RC4 Encryption
    
-The RC4 encryption algorithm is employed to encrypt the user agent string. The resulting encrypted string is a key component of the X-Bogus header.
+The RC4 encryption algorithm is employed to encrypt the user agent string. The resulting encrypted string is a key component of the X-Bogus parameter.
 ```py
     def rc4_encrypt(plaintext: str, key: list[int]) -> str:
         s_box = [i for i in range(256)]
@@ -95,7 +95,7 @@ The `checksum` function calculates a checksum based on a provided list of intege
 ```
 
 ### X-Bogus Generation
-The `_x_bogus` function constructs the X-Bogus header by combining the processed data, user agent, and a timestamp. It applies specific operations and conversions to generate a unique X-Bogus value.
+The `_x_bogus` function constructs the X-Bogus parameter by combining the processed data, user agent, and a timestamp. It applies specific operations and conversions to generate a unique X-Bogus value.
 
 ```py
     def _x_bogus(params: str, user_agent: str, timestamp: int, data: str = '') -> str:
@@ -133,7 +133,7 @@ The `_x_bogus` function constructs the X-Bogus header by combining the processed
 ```
 
 ### X-Bogus Signing
-The `sign` function takes the parameters and user agent, generates the X-Bogus value using the `_x_bogu`s function, and appends it to the request parameters.
+The `sign` function takes the parameters and user agent, generates the X-Bogus value using the `_x_bogus` function, and appends it to the request parameters.
 ```py
 def sign(params: str, ua: str) -> str:
     return params + '&X-Bogus=' + _x_bogus(params, ua, int(time()))
