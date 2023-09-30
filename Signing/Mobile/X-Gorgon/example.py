@@ -1,4 +1,4 @@
-from signature import signature
+from signature import Signature
 
 signer = signature(params="", data="", cookies="").get_value()
 
