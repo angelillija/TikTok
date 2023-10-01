@@ -35,12 +35,12 @@ As a confirmation, we can check what this is by going to [Hashes.com](https://ha
 
 ![image](https://github.com/angelillija/priv/assets/105955582/8975b309-59a4-4044-a4fb-117e92e3176c)
 
-`DkbiJkQju` is a bytes literal in Python, representing a sequence of bytes. Each character in the string is represented as its ASCII byte value.
+```Dkb`iJkQju``` is a bytes literal in Python, representing a sequence of bytes. Each character in the string is represented as its ASCII byte value.
 
 
 Here is code to decode it:
 
-- `for byte in b"DkbiJkQju"` is a loop that iterates over each byte (ASCII value of a character) in the bytes literal.
+- ```for byte in b"Dkb`iJkQju"``` is a loop that iterates over each byte (ASCII value of a character) in the bytes literal.
 
 - `byte ^ 5`: For each byte (ASCII value), the XOR (^) operation is performed with the constant value 5.
 
