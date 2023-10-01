@@ -25,7 +25,7 @@ print(hashlib.md5(data.encode()).hexdigest().upper())
 ```
 Just like shown in the first image, the generated output of the exact same request body is `46C03B52742B3F2615A3ABDF1636B754`
 
-# Tiktok Email, Username, & Password Encryption
+# Tiktok XOR Encryption
 
 When intercepting TikTok's mobile API & looking at requests such as login, register, etc, you'll see that the email/username and password is encrypted.
 
