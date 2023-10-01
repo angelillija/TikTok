@@ -20,11 +20,11 @@ def process_image(string):
 ```
 
 ### Solving Captcha
-This function initiates by sending a request to the TikTok API to retrieve captcha data, including the URLs for puzzle and piece images. 
+This function initiates by sending a request to `https://rc-verification-i18n.tiktokv.com/captcha/get` to retrieve captcha data, including the URLs for puzzle and piece images. 
 These images are then processed through the `process_image` function, which involves decoding the base64 string, converting it into a grayscale image, and applying a weighted gradient to enhance relevant features. 
 After preprocessing, a random sliding length is generated for the puzzle solver. Template matching is performed on the puzzle and piece images, identifying the best match and its position. 
 Using this position and the sliding length, a response payload is crafted, simulating the sliding action required for the captcha challenge. 
-Finally, a POST request is made to the TikTok API with the generated payload, aiming to verify the captcha challenge. The response from this request is then returned.
+Finally, a POST request is made to `https://rc-verification-i18n.tiktokv.com/captcha/verify` with the generated payload, aiming to verify the captcha challenge. The response from this request is then returned.
 
 ```py
 def solve_captcha(self) -> dict:
