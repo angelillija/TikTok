@@ -8,6 +8,8 @@ This is my TikTok reverse engineering journey, where I completely dissect every 
     - [Mobile](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile)
       - [X-Gorgon](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile/X-Gorgon)
       - [Other](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile/Other)
+            - [X-SS-STUB](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile/Other#tiktok-x-ss-stub)
+            - [XOR Encryption](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile/Other#tiktok-email-username--password-encryption)
 - [Captcha Solver](https://github.com/angelillija/TikTok/tree/main/Captcha%20Solver)
 
 ### Contact
