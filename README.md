@@ -7,6 +7,7 @@ This is my TikTok reverse engineering journey, where I completely dissect every 
 - [Signing](https://github.com/angelillija/TikTok/tree/main/Signing)
     - [Mobile](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile)
       - [X-Gorgon](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile/X-Gorgon)
+      - [Other](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile/Other)
 - [Captcha Solver](https://github.com/angelillija/TikTok/tree/main/Captcha%20Solver)
 
 ### Contact
