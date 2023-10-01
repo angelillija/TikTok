@@ -31,7 +31,7 @@ When intercepting TikTok's mobile API & looking at requests such as login, regis
 
 ![image](https://github.com/angelillija/priv/assets/105955582/0443758c-2622-4cb4-a505-6370bb523a07)
 
-As a confirmation, we can check what this is by going to [Hashes.com](https://hashes.com/en/tools/hash_identifier) & can see it's hex encoded.
+We can check what this is by going to [Hashes.com](https://hashes.com/en/tools/hash_identifier) & can see it's hex encoded.
 
 ![image](https://github.com/angelillija/priv/assets/105955582/8975b309-59a4-4044-a4fb-117e92e3176c)
 
