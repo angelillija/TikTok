@@ -54,11 +54,9 @@ print(bytes([byte ^ 5 for byte in b"Dkb`iJkQju"]).decode('utf-8'))
 
 The output is `AngelOnTop` which is correct but this is only decrypting it, we need a way to encrypt it.
 
-To actually encrypt it, we know that for each character, it performs an XOR operation between the ASCII value of the character and 5.
-
-It converts the XOR result to its hexadecimal representation using `hex(ord(c) ^ 5)`.
-
-It also takes the hexadecimal representation (excluding the "0x" prefix) of each XOR result and concatenates them to form the encrypted string.
+- For each character, it performs an XOR operation between the ASCII value of the character and 5.
+- It converts the XOR result to its hexadecimal representation using `hex(ord(c) ^ 5)`.
+- It takes the hexadecimal representation (excluding the "0x" prefix) of each XOR result and concatenates them to form the encrypted string.
 
 ```py
 def encrypt(string):
