@@ -24,3 +24,46 @@ data = "body=null"
 print(hashlib.md5(data.encode()).hexdigest().upper())
 ```
 Just like shown in the first image, the generated output of the exact same request body is `46C03B52742B3F2615A3ABDF1636B754`
+
+# Tiktok Email, Username, & Password Encryption
+
+When intercepting TikTok's mobile API & looking at requests such as login, register, etc, you'll see that the email/username and password is encrypted.
+
+![image](https://github.com/angelillija/priv/assets/105955582/0443758c-2622-4cb4-a505-6370bb523a07)
+
+As a confirmation, we can check what this is by going to [Hashes.com](https://hashes.com/en/tools/hash_identifier) & can see it's hex encoded.
+
+![image](https://github.com/angelillija/priv/assets/105955582/8975b309-59a4-4044-a4fb-117e92e3176c)
+
+`DkbiJkQju` is a bytes literal in Python, representing a sequence of bytes. Each character in the string is represented as its ASCII byte value.
+
+
+Here is code to decode it:
+
+- `for byte in b"DkbiJkQju"` is a loop that iterates over each byte (ASCII value of a character) in the bytes literal.
+
+- `byte ^ 5`: For each byte (ASCII value), the XOR (^) operation is performed with the constant value 5.
+
+- The `bytes([...])` method constructs a new bytes object from the resulting list of XORed values.
+
+- `.decode('utf-8')` decodes the bytes into a string using UTF-8 encoding.
+
+```py
+print(bytes([byte ^ 5 for byte in b"Dkb`iJkQju"]).decode('utf-8'))
+```
+
+The output is `AngelOnTop` which is correct but this is only decrypting it, we need a way to encrypt it.
+
+To actually encrypt it, we know that for each character, it performs an XOR operation between the ASCII value of the character and 5.
+
+It converts the XOR result to its hexadecimal representation using `hex(ord(c) ^ 5)`.
+
+It also takes the hexadecimal representation (excluding the "0x" prefix) of each XOR result and concatenates them to form the encrypted string.
+
+```py
+def encrypt(string):
+    return "".join([hex(ord(c) ^ 5)[2:] for c in string])
+
+print(encrypt("AngelOnTop"))
+```
+Output: `446b6260694a6b516a75` As shown in the image in the request body, this is completely valid.
