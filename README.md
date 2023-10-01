@@ -3,10 +3,10 @@
 This is my TikTok reverse engineering journey, where I completely dissect every aspect of TikTok's functionality. I will unravel every security measure used & how to automate different features using their private mobile API.
 
 ### Table of Contents 
-- [TikTok Signing](https://github.com/angelillija/TikTok/tree/main/Signing)
+- [Signing](https://github.com/angelillija/TikTok/tree/main/Signing)
     - [Mobile](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile)
       - [X-Gorgon](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile/X-Gorgon)
-- [TikTok Captcha](https://github.com/angelillija/TikTok/tree/main/Captcha)
+- [Captcha](https://github.com/angelillija/TikTok/tree/main/Captcha)
 
 ### Contact
 - **Telegram**: [t.me/angell](https://t.me/angell)
