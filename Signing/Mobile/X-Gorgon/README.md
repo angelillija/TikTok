@@ -1,6 +1,6 @@
 # X-Gorgon 0404 & X-Khronos
 
-Two of the four current TikTok's security headers in their mobile android API are X-Gorgon & X-Khronos. These two are used by TikTok to authenticate and secure API requests & were the first two ever added.
+Two of the five current TikTok's security headers in their mobile android API are X-Gorgon & X-Khronos. These two are used by TikTok to authenticate and secure API requests & were the first two ever added.
 
 - X-Gorgon: This header is created by hashing key components and combining them with a version and timestamp. It ensures the validity and integrity of requests to TikTok's servers.
 
