@@ -41,11 +41,8 @@ We can check what this is by going to [Hashes.com](https://hashes.com/en/tools/h
 Here is code to decode it:
 
 - ```for byte in b"Dkb`iJkQju"``` is a loop that iterates over each byte (ASCII value of a character) in the bytes literal.
-
 - `byte ^ 5`: For each byte (ASCII value), the XOR (^) operation is performed with the constant value 5.
-
 - The `bytes([...])` method constructs a new bytes object from the resulting list of XORed values.
-
 - `.decode('utf-8')` decodes the bytes into a string using UTF-8 encoding.
 
 ```py
