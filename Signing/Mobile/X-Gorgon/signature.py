@@ -19,34 +19,17 @@ class Signature:
                 for value in [self.params, self.data, self.cookies]
             )
         )
-        return {"X-Gorgon": f"0404b0d30000{gorgon}", "X-Khronos": str(int(time.time()))}
+        return {
+            "X-Gorgon": f"0404b0d30000{gorgon}",
+            "X-Khronos": str(int(time.time()))
+        }
 
     @staticmethod
     def encrypt(data: str) -> str:
         unix = int(time.time())
         length = 0x14
-        key = [
-            0xDF,
-            0x77,
-            0xB9,
-            0x40,
-            0xB9,
-            0x9B,
-            0x84,
-            0x83,
-            0xD1,
-            0xB9,
-            0xCB,
-            0xD1,
-            0xF7,
-            0xC2,
-            0xB9,
-            0x85,
-            0xC3,
-            0xD0,
-            0xFB,
-            0xC3,
-        ]
+        key = [0xDF, 0x77, 0xB9, 0x40, 0xB9, 0x9B, 0x84, 0x83, 0xD1, 0xB9, 0xCB, 0xD1, 0xF7, 0xC2, 0xB9, 0x85, 0xC3, 0xD0, 0xFB, 0xC3]
+
 
         param_list = [
             int(data[8 * i : 8 * (i + 1)][j * 2 : (j + 1) * 2], 16)
