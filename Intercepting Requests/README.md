@@ -10,10 +10,9 @@ Typically, I might patch the APK using Frida to bypass SSL pinning. However, in 
 
 
 ### Requirements
-
 - [MEmu Emulator](https://www.memuplay.com/)
 - [HTTP Toolkit](https://httptoolkit.com/)
-- [TikTok APK](https://tiktok.en.uptodown.com/android)
+- [TikTok APK](https://tiktok.en.uptodown.com/android/post-download)
 
 ## Steps:
 
