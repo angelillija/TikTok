@@ -19,7 +19,10 @@ class Signature:
                 for value in [self.params, self.data, self.cookies]
             )
         )
-        return {"X-Gorgon": f"0404b0d30000{gorgon}", "X-Khronos": str(int(time.time()))}
+        return {
+            "X-Gorgon": f"0404b0d30000{gorgon}", 
+            "X-Khronos": str(int(time.time()))
+        }
 
     @staticmethod
     def encrypt(data: str) -> str:
