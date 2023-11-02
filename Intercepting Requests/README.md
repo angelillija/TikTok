@@ -6,7 +6,7 @@ Intercepting TikTok requests involves capturing and analyzing network traffic be
 ### Understanding TikTok's SSL Pinning:
 TikTok implements SSL pinning to enhance security by ensuring that the app only communicates with trusted servers, verified by specific SSL certificates.
 
-Typically, I might patch the APK using Frida to bypass SSL pinning. However, in this case, patching the APK using Frida isn't necessary since we're using an old Android version.
+Typically, I'll patch the APK using Frida to bypass SSL pinning. However, in this case, patching the APK using Frida isn't necessary since we're using an old Android version.
 
 
 ### Requirements
