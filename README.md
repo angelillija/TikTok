@@ -12,5 +12,9 @@ This is my TikTok reverse engineering journey, where I completely dissect every 
             - [XOR Encryption](https://github.com/angelillija/TikTok/tree/main/Signing/Mobile/Other#tiktok-email-username--password-encryption)
 - [Captcha Solver](https://github.com/angelillija/TikTok/tree/main/Captcha%20Solver)
 
+### TikTok Captcha Solver API
+For a fullly featured TikTok Captcha Solver API that can handle the Puzzle, Rotate, and 3D Shapes challenges, you should check out [SadCaptcha](https://www.sadcaptcha.com?ref=angell).
+
 ### Contact
 - **Telegram**: [t.me/angell](https://t.me/angell)
+
