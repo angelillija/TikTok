@@ -1,6 +1,6 @@
 from solver import TikTokCaptchaSolver
 
-# Replace with actual device_id and install_id
+# Replace with an actual device_id and install_id
 print(
     TikTokCaptchaSolver(
         device_id=1234567891012345678, install_id=1234567891012345678
