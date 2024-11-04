@@ -28,5 +28,3 @@ This is my TikTok reverse engineering journey, where I completely dissect every 
 
 ### Contact
 - **Telegram**: [t.me/dropout](https://t.me/dropout)
-
-1
